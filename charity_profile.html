@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Charity Profile | HelpHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_uQFhiFgAV8IxY6KEQuSH6aEJERNLC6A&libraries=places"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="heart.png" alt="Charity Logo" class="logo-placeholder">
+            <div class="title">HelpHub</div>
+            <h3><u>"Make a Difference!"</u></h3>
+        </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </header>
+    <main>
+        <div class="nav-section">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="charities.html">Charities</a>
+                <a href="help.html">Help</a>
+            </nav>
+        </div>
+    </header>
+    <div class="charity-profile-container">
+        <div class="charity-header">
+            <img src="heartbeat.png" alt="Charity Logo" class="charity-logo">          
+            <h1>Heartbeat International, Inc.</h1>
+        </div>
+        <div class="back-button-container">
+        <a href="charities.html" class="back-button">Back to Charities</a>
+        </div>
+        <div class="charity-info-map-container">
+        <div class="charity-contact-info">
+            <p><u>Phone:</u>  (614) 885-7577</p>
+            <p><u>Website:</u> </p><a href="https://www.heartbeatinternational.org">www.heartbeatinternational.org</a>
+            <p><u>Address:</u> 8405 Pulsar Place Ste 100, Columbus, OH, 43240 USA</p>
+            <p id="charity-address" style="display:none;">8405 Pulsar Place Ste 100, Columbus, OH, 43240 USA</p>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="charity-cause">
+            <h3><strong>Cause: Human Services</strong></h3>
+        </div>
+        <div class="charity-description">
+            <p><strong>Mission: </strong>Heartbeat International's mission is to Reach and Rescue as many lives as possible, around the world, through an effective network of life-affirming pregnancy help, to Renew communities for LIFE.</p>
+            <p><strong>Programs:</strong> We REACH those who are abortion-vulnerable through Option Line's 24-hour contact center (800-712-HELP) and cutting-edge website, OptionLine.org. 
+                Option Line is the realization of one of the original dreams of Heartbeat International's founders - a 24/7 helpline to care for women as they make decisions
+                 of life or death. With today's technology (call, text, chat, and email), we've gone even farther, reaching these women where they are and connecting them to 
+                 our network of local organizations.</p>
+
+            <p><strong>Leadership Development:</strong> Heartbeat International staff logs upwards of 175,000 miles per year training and investing in pregnancy help leaders in locations all over the world. In addition 
+            to the Annual Conference and Consultant Continuing Education, Renewal and Training, Heartbeat offers an extensive catalog of resources developed in-house, as well as 
+            the Heartbeat Academy, which has an active online enrollment of well over 2,000.</p>
+        </div>
+        
+        <div class="image-slider">
+            <div class="slides">
+                <div class="slide"><img src="heartwork1.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="heartwork2.jpeg" alt="Image 2"></div>
+                <div class="slide"><img src="heartbeat3.jpeg" alt="Image 3"></div>
+            </div>
+            
+            <a href="#" class="prev" onclick="changeSlide(-1, event)">&#10094;</a>
+            <a href="#" class="next" onclick="changeSlide(1, event)">&#10095;</a>
+        </div>
+    </div>
+
+    
+<button id="submit-button" class="volunteer-now" onclick="showPopup()">Volunteer Now!</button>
+<div class="popup-container" id="signupPopup" style="display:none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="hidePopup()">&times;</span>
+        <h2>Sign Up to Volunteer</h2>
+        <hr>
+        <form id="volunteerform">
+            <input type="text" id="firstname" placeholder="First Name" required>
+            <input type="text" id="lastname" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <hr>
+            <textarea id="reason" placeholder="Why do you want to volunteer with us?" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="slisder.js"></script>
+<script src="charity_profile.js"></script>
+<script src="map.js"></script>
+</body>
+
+</html>

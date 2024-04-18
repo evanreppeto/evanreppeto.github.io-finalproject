@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Help | HelpHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="heart.png" alt="Charity Logo" class="logo-placeholder">
+            <div class="title">HelpHub</div>
+            <h3><u>"Make a Difference!"</u></h3>
+        </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </header>
+    <main>
+        <div class="nav-section">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="charities.html">Charities</a>
+                <a href="help.html">Help</a>
+            </nav>
+        </div>
+        <div class="contact-content">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="phone">Phone: 123-456-7890</div>
+            <div class="email">Email: helphub@gmail.com</div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <p style="margin-left: 10px;">If you have any questions or need assistance, please fill out the form below to contact us.</p>
+        <div class="form-and-textarea-container">
+            <form action="/submit-contact-form" method="post" class="form-content">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+        
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+            </form>
+            <div class="textarea-container">
+                <label for="message">What is the problem/situation?</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="submit-button-container">
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+    </main>
+</body>
+</html>

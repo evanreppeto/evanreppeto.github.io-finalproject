@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Charity Profile | HelpHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_uQFhiFgAV8IxY6KEQuSH6aEJERNLC6A&libraries=places"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="heart.png" alt="Charity Logo" class="logo-placeholder">
+            <div class="title">HelpHub</div>
+            <h3><u>"Make a Difference!"</u></h3>
+        </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </header>
+    <main>
+        <div class="nav-section">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="charities.html">Charities</a>
+                <a href="help.html">Help</a>
+            </nav>
+        </div>
+    </header>
+    <div class="charity-profile-container">
+        <div class="charity-header">
+            <img src="giggles.jpeg" alt="Charity Logo" class="charity-logo">
+            <h1>Giggles & Coos</h1>
+        </div>
+        <div class="back-button-container">
+            <a href="charities.html" class="back-button">Back to Charities</a>
+            </div>
+        <div class="charity-info-map-container">
+        <div class="charity-contact-info">
+            <p><u>Phone:</u> 614-599-5891</p>
+            <p><u>Website:</u> </p><a href="https://www.gigglescoosnpo.org">www.gigglescoosnpo.org</a>
+            <p><u>Address:</u> 1234 Demorest Rd, Columbus, OH 43204 USA</p>
+            <p id="charity-address" style="display:none;">1234 Demorest Rd, Columbus, OH 43204 USA</p>
+        </div>
+        <div id="map"></div>
+        </div>
+        <div class="charity-cause">
+            <h3><strong>Cause: Children and Youth, Youth Devleopment, Religion, Community Improvement</strong></h3>
+        </div>
+        <div class="charity-description">
+            <p><strong>Mission:</strong> Stretching beyond the basics to reconnect families and community through health, wellness and education. Our Values – What We Believe Compassion: We care for all the youth we 
+                serve as if they were our own, helping them to pursue positive choices and opportunities to thrive. Impact: We better the lives of youth and families by providing positive, inspiring programs that make 
+                a difference, now and in the future. Diversity: We embrace the differences of every youth, family and community we serve with an inclusive nature and diverse staff. Perseverance: We commit to building the 
+                capabilities of all youth, regardless of circumstance, to overcome challenges and achieve success. Collaboration: We rely on our staff, communities, supporters, funders, and partner agencies to help shape 
+                the success of our youth.</p>
+                <p><strong>Target demographics:</strong> children, youth, families, and community</p>
+                <p><strong>Direct beneficiaries per year:</strong> 1,347 students, 60 agencies, 1,200 families, 73 organizations</p>
+                <p><strong>Geographic areas served:</strong> Columbus and the surrounding areas</p>
+                <p><strong>Programs:</strong> tutoring program, mentoring program, summer traveling program, nutritional health program, resume builder and interview preparation for job seekers, credit repair program, etiquette and manners program, and many more charitable programs</p>
+        </div>
+
+        <div class="image-slider">
+            <div class="slides">
+                <div class="slide"><img src="giggleswork1.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="giggleswork2.webp" alt="Image 2"></div>
+                <div class="slide"><img src="giggles3.jpeg" alt="Image 3"></div>
+            </div>
+            
+            <a href="#" class="prev" onclick="changeSlide(-1, event)">&#10094;</a>
+            <a href="#" class="next" onclick="changeSlide(1, event)">&#10095;</a>
+        </div>
+    </div>
+        <button class="volunteer-now" onclick="showPopup()">Volunteer Now!</button>
+
+<div class="popup-container" id="signupPopup" style="display:none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="hidePopup()">&times;</span>
+        <h2>Sign Up to Volunteer</h2>
+        <hr>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <hr>
+            <textarea placeholder="Why do you want to volunteer with us?" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="slider.js"></script>
+<script src="charity_profile.js"></script>
+<script src="map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Charity Profile | HelpHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_uQFhiFgAV8IxY6KEQuSH6aEJERNLC6A&libraries=places"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="heart.png" alt="Charity Logo" class="logo-placeholder">
+            <div class="title">HelpHub</div>
+            <h3><u>"Make a Difference!"</u></h3>
+        </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </header>
+    <main>
+        <div class="nav-section">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="charities.html">Charities</a>
+                <a href="help.html">Help</a>
+            </nav>
+        </div>
+    </header>
+    <div class="charity-profile-container">
+        <div class="charity-header">
+            <img src="tech.png" alt="Charity Logo" class="charity-logo">
+            <h1>TECH CORPS</h1>
+        </div>
+        <div class="back-button-container">
+            <a href="charities.html" class="back-button">Back to Charities</a>
+            </div>
+            <div class="charity-info-map-container">
+        <div class="charity-contact-info">
+            <p><u>Phone:</u> 614-583-9211</p>
+            <p><u>Website:</u> </p><a href="https://techcorps.org">https://techcorps.org</a>
+            <p><u>Address:</u>  6600 Busch Blvd Suite 210, Columbus, OH, 43229 USA</p>
+            <p id="charity-address" style="display:none;">6600 Busch Blvd Suite 210, Columbus, OH, 43229 USA</p>
+        </div>
+        <div id="map"></div>
+        </div>
+        <div class="charity-cause">
+            <h3><strong>Cause: Education, Primary and Elementary School</strong></h3>
+        </div>
+        <div class="charity-description">
+            <p><strong>Results:</strong> For more than 25 years, TECH CORPS has worked to ensure K-12 students have equal access to Computer Science (CS) and Information Technology (IT) programs, 
+                skills and resources that enhance early learning and prepare them for college, credential or career. TECH CORPS develops technology programs and deploys tech-savvy talent to assist K-12 students and teachers. 
+                TECH CORPS offers its Signature Programs and works with partners to develop regional programs based on community needs or sponsor preference. TECH CORPS programs fall into one of three categories: Awareness, 
+                Exploration or Immersion and support students in moving along a technology pathway. TECH CORPS is the longest operating education-technology nonprofit organization in the United States. Over the years, 
+                partners such as Dell, Google, JPMorgan Chase, Nordson Corporation, Battelle and Cognizant have provided TECH CORPS with the fuel to deliver much-needed technology resources to K-12 students and teachers. 
+                More than 15,000 TECH CORPS volunteers have shared their time and talents assisting schools and nonprofit organizations in their communities. TECH CORPS was founded in 1995 by Gary Beach, Publisher Emeritus 
+                of CIO Magazine and author of The U.S. Technology Skills Gap.</p>
+                <p><strong>Target demographics:</strong> K-12 students</p>
+                <p><strong>Direct beneficiaries per year:</strong> more than 4100 students</p>
+                <p><strong>Geographic areas served:</strong> United States</p>
+                <p><strong>Programs:</strong> Computing Career Corps, E4Tech, High School Coding Camp, Student Code Corps, Student TECH CORPS, Student WEB CORPS, Techie Camp, Techie Club and TECHCORPS hack</p>
+        </div>
+        <div class="image-slider">
+            <div class="slides">
+                <div class="slide"><img src="techwork1.png" alt="Image 1"></div>
+                <div class="slide"><img src="techwork2.jpeg" alt="Image 2"></div>
+                <div class="slide"><img src="tech3.png" alt="Image 3"></div>
+            </div>
+            <a href="#" class="prev" onclick="changeSlide(-1, event)">&#10094;</a>
+            <a href="#" class="next" onclick="changeSlide(1, event)">&#10095;</a>
+        </div>
+    </div>
+        <button class="volunteer-now" onclick="showPopup()">Volunteer Now!</button>
+
+<div class="popup-container" id="signupPopup" style="display:none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="hidePopup()">&times;</span>
+        <h2>Sign Up to Volunteer</h2>
+        <hr>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <hr>
+            <textarea placeholder="Why do you want to volunteer with us?" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="slider.js"></script>
+<script src="charity_profile.js"></script>
+<script src="map.js"></script>
+</body>
+
+</html>
